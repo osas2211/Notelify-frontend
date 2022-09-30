@@ -57,7 +57,7 @@
 .user-icon::before {
   position: absolute;
   bottom: 10%;
-  left: 25%;
+  left: 2rem;
   content: "";
   height: 0.5rem;
   width: 0.5rem;
