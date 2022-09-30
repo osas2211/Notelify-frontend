@@ -41,7 +41,7 @@ export const SignUp = () => {
           <AuthForm
             variant={"signup"}
             header={"Create an account"}
-            subheader={"Start your journey with us for free"}
+            subheader={"Take notes and unleash your ideas with Notelify."}
             userNameRegister={userName}
             nameRegister={name}
             email={email}

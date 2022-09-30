@@ -33,8 +33,8 @@ export const LogIn = () => {
       >
         <AuthForm
           variant={"login"}
-          header={"Welcome back"}
-          subheader={"Jot down your ideas and thoughts within seconds"}
+          header={"Welcome Back"}
+          subheader={"Please fill your details to access your account."}
           userNameLogin={userName}
           setUserNameLogin={setUserName}
           passwordLogin={password}
