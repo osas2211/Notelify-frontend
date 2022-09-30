@@ -44,8 +44,9 @@
 }
 
 .header-mobile {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: none;
+  width: 100%;
 }
 
 .user-icon {
@@ -132,7 +133,7 @@
 @media (max-width: 700px) {
   .main-header {
     transform: translateX(-200%);
-    width: 45%;
+    width: 55%;
     z-index: 5;
   }
 
@@ -142,7 +143,9 @@
   }
 
   main {
-    margin: 1rem 0rem 1rem 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    padding: 0;
   }
 
   .top-header {

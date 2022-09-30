@@ -28,4 +28,7 @@
   .quicknotes {
     margin-top: 1rem;
   }
+  .quicknotes h2 {
+    font-size: 1rem;
+  }
 }
