@@ -1,0 +1,155 @@
+.main-header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 15%;
+  height: 100vh;
+  /* border-right: 2px solid rgba(0, 0, 0, 0.1); */
+  padding: 1.5rem 0rem;
+  background-color: #fff;
+}
+
+.main-header li {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.active-nav {
+  border-left: 5px solid #0da2e7;
+  font-weight: bold;
+}
+
+.top-header {
+  position: relative;
+  left: 15%;
+  top: 0;
+  padding: 2rem 2.5rem;
+  width: 85%;
+  height: 38vh;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  color: #fff;
+}
+.showcase {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.showcase,
+.showcase img {
+  height: 100%;
+  width: 100%;
+}
+
+.header-mobile {
+  padding: 1rem;
+  display: none;
+}
+
+.user-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon::before {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #06ff65;
+  z-index: 5;
+  border-radius: 100%;
+}
+
+.ham {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ham span {
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.ham span:nth-child(1) {
+  transform: translateY(-12px);
+  width: 50%;
+  left: 15%;
+}
+
+.ham span:nth-child(3) {
+  transform: translateY(12px);
+  width: 30%;
+  left: 15%;
+}
+
+.ham.ham-active span:nth-child(2) {
+  transform: translateX(150%);
+}
+
+.ham.ham-active span:nth-child(1) {
+  width: 70%;
+  transform: translateY(0) rotate(45deg);
+  transition-delay: 0.125s;
+}
+
+.ham.ham-active span:nth-child(3) {
+  width: 70%;
+  transform: translateY(0) rotate(315deg);
+  transition-delay: 0.25s;
+}
+
+@media (max-width: 1000px) {
+  .main-header {
+    width: 20%;
+  }
+  main {
+    margin-left: 23%;
+  }
+  .top-header {
+    width: 80%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-header {
+    transform: translateX(-200%);
+    width: 45%;
+    z-index: 5;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+  }
+
+  main {
+    margin: 1rem 0rem 1rem 1rem;
+  }
+
+  .top-header {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+}
