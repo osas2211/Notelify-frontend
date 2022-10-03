@@ -14,6 +14,7 @@ import { Editor } from "./pages/Editor"
 import { CollabNotes } from "./pages/CollabNotes"
 import { store } from "./redux/store"
 import { Provider } from "react-redux"
+import { ResetPassword } from "./pages/ResetPassword"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/forget-password" element={<ResetPassword />} />
           <Route path="/" element={<PrivateRoutes />}>
             <Route path="/notes" element={<Notes />} />
             <Route path="/notes/editor/:id" element={<Editor />} />
