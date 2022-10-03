@@ -86,7 +86,7 @@
   height: 2px;
   border-radius: 10px;
   background-color: #000;
-  transition: 0.18s;
+  /* transition: 0.18s; */
 }
 
 .ham span:nth-child(1) {
@@ -139,7 +139,7 @@
 
   .nav-active {
     transform: translateX(0%);
-    transition: 0.18s ease-in-out;
+    /* transition: 0.18s ease-in-out; */
   }
 
   main {
